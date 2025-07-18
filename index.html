@@ -10,17 +10,18 @@ body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"He
 header{
   background:
     linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-    url('IMG_5731.JPG') center 20%/cover no-repeat,
+    url('IMG_5731.JPG') center/cover no-repeat,
     var(--base) url('hero.jpg') center/cover no-repeat;
-  min-height:60vh;
-  aspect-ratio: 4/3; /* 一般的な集合写真比率。必要に応じて調整可 */
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  aspect-ratio: 4/3;
   display:flex;
   align-items:center;
   justify-content:center;
   color:#fff;
   text-shadow:0 2px 4px rgba(0,0,0,.4);
   position:relative;
-  /* 上5分の1、下3分の1をパキッとカット */
   clip-path: inset(20% 0 0 0);
   -webkit-clip-path: inset(20% 0 0 0);
 }
