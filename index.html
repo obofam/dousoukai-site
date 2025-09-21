@@ -54,6 +54,7 @@ footer{background:var(--accent);color:#fff;text-align:center;padding:1rem 0;}
 }
 @media(min-width:600px){header h1{font-size:3rem;}}
 iframe.youtube{width:100%;aspect-ratio:16/9;border:0;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,.1);}
+video.video{width:100%;aspect-ratio:16/9;display:block;border:0;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,.1);background:#000;object-fit:cover;}
 /* 掲示板テーブルのスタイル */
 #attendance-board table{width:100%;border-collapse:collapse;}
 #attendance-board th,#attendance-board td{padding:0.4rem;border-bottom:1px solid #eee;}
@@ -110,6 +111,15 @@ var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=t
   <h2>合唱曲「十字架（クルス）の島」復習用動画</h2>
   <p>当日までにサビだけでも思い出しておいてね♪</p>
   <iframe class="youtube" src="https://www.youtube.com/embed/kNbZyzZiBIE" allowfullscreen></iframe>
+</section>
+
+<section class="card">
+  <h2>動画</h2>
+  <video class="video" controls playsinline preload="metadata">
+    <source src="movie.mp4" type="video/mp4">
+    お使いのブラウザは動画再生に対応していません。<a href="movie.mp4">動画ファイル</a>をダウンロードしてください。
+  </video>
+  
 </section>
 
 <footer>
